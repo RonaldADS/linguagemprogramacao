@@ -15,8 +15,8 @@ body {
     text-align: center;
 }
 button{
-    background: blue;
-    color: white;
+    background: rgb(15, 15, 15);
+    color: rgb(230, 132, 4);
     border: none;
     padding: 10px 15px; /* vertical e horizontal*/
     border-radius: 5px; /*borda*/
@@ -24,7 +24,7 @@ button{
 }
 button:hover{
     color: #ff6600;/*cor das letras (avançar) quando cursor passa em cima */
-    background-color: #000000;/*cor da caixa (avançar) quando cursor passa em cima */
+    background-color: #000000;/*cor da caixa (avançar) quando cursor passa em cima */ 
 }
 .image{
     border-radius: 50%;
@@ -41,4 +41,25 @@ button:hover{
     position: fixed;
     left: 0%;
     top: 0%;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 10px 0;
+}
+.sidebar ul li a{
+    color: rgb(230, 150, 3);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container{
+    flex-grow: 1;/* capacidade de um elemento crescer*/
+    padding: 10px ;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
