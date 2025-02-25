@@ -2,6 +2,7 @@ form{
     display: flex;
     flex-direction: column;
 }
-label{
-    margin: 0%;
+
+label {
+    padding-left: 0px;
 }
