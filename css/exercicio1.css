@@ -4,5 +4,12 @@ form{
 }
 
 label {
-    padding-left: 0px;
+    display: flex;
+    margin-top: 0px;
+}
+input{
+    margin-top: 5px;
+}
+button{
+    margin-top: 20px;
 }
