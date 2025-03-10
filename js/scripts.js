@@ -18,3 +18,8 @@ function exe4 (){
 let mp =  ((nro1*2) + (nro2*3)) / 5
 document.getElementById("mp").innert
 }
+    function exercício (){
+        let preco = Number( document.getElementById("preco").value)
+        let desconto = (preco*10)/100
+        document.getElementById("desconto").innerText ;"o novo preço é de " +(preco-desconto)
+    }
