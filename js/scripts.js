@@ -31,6 +31,6 @@ function calcularSalario() {
     // Calcula a comissão (4% das vendas)
     const comissao = (valorVendas * 0.04)
      
-    document.getElementById("salarioFinal").innerText = "o resultado é" = (salarioFixo + comissao)
+    document.getElementById("salarioFinal").innerText = "o resultado é" + (salarioFixo + comissao)
 
 }
