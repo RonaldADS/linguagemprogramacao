@@ -22,4 +22,15 @@ document.getElementById("mp").innert
         let preco = Number( document.getElementById("preco").value)
         let desconto = (preco*10)/100
         document.getElementById("desconto").innerText ;"o novo preço é de " +(preco-desconto)
-    }
+}
+function calcularSalario() {
+
+    let salarioFixo = Number(document.getElementById("salarioFixo").value);
+    let valorVendas = Number(document.getElementById("valorVendas").value);
+
+    // Calcula a comissão (4% das vendas)
+    const comissao = (valorVendas * 0.04)
+     
+    document.getElementById("salarioFinal").innerText = "o resultado é" = (salarioFixo + comissao)
+
+}
