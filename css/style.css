@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #000000;
 /* usa modelo FlexBox, conceito de caixa para posicionamento */
-color: #d66305;
+color: #ffffff;
     display: flex;
     align-items: center; /* centraliza verticalmente*/
     justify-content: center; /* centraliza horizontalmente */ 
@@ -24,7 +24,7 @@ button {
     cursor: pointer; /* ponteiro do mouse */
 }
 button:hover {
-    background-color: #f16f04;
+    background-color: #ffffff;
 }
 
 .image {
@@ -37,7 +37,7 @@ button:hover {
     width: 200px;
     height: 100vh; 
     background: #4b4b4b;
-    color: rgb(255, 182, 25);
+    color: rgb(255, 255, 255);
     padding: 20px;
     position: fixed;
     left: 0;
@@ -52,7 +52,7 @@ button:hover {
     margin: 10px 0;
 }
 .sidebar ul li a{
-    color: rgb(240, 159, 8);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     cursor: pointer;
 }
@@ -63,5 +63,5 @@ button:hover {
     margin-left: 200px;
     display: flex;
     justify-content: center;
-    align-itens: center;
+    align-items: center;
 }
