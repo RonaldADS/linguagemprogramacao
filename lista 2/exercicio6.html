@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!-- UTF-8 sistema de codificação do português-->
-        <meta charset="UTF-8"/>
-        <!-- a largura da página será a largura do dispositivo --> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Profile Card</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/scripts.js"> </script>   
+        <meta charset="UTF-8"><!-- UTF - 8 Sistema De Codificação de Português-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- a largura da página será a largura do dispositivo.-->
+        <title>Ronald ADS</title>
+        <link rel="stylesheet" href="css/style.css"> <!-- linka o css ao html-->
+        <script src="js/scripts.js"></script> <!--linka o javascript ao html-->
     </head>
     <body>
         <div class="sidebar">
@@ -28,14 +26,21 @@
         </div>
         <div class="container">
             <div class="card">
-                <img class="image" src="/img/ronald.img (2).jpg" width="400">
-                <h2> Ronald dos Santos Botelho Ferreira</h2>
-                <p> Análise e Desenvolvimento de Sistemas </p>
-                <button onclick="seguir()"> Seguir </button>
+                <h1> Exercício 6 </h1>
+                <form>
+                    <label> salarioFixo</label><br>
+
+                    <input type="number" id="salarioFixo"/><br>
+
+                    <label> valorVendas</label><br>
+
+                    <input type="number" id="valorVendas"/><br>
+
+                    <button onclick="calcularSalario()"type = "button">Calcular</button>
+
+                    <label id="salarioFinal">o resultado é: </label>
+                </form>
             </div>
         </div>
     </body>
 </html>
-<!-- git add . -->
-<!-- git commit -m "meu primeiro programaweb" -->
-<!-- git push -u origin main -->
