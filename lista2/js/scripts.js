@@ -155,3 +155,23 @@ function exe9(){
     }
     document.getElementById("credito").innerHTML = 'saldo ${saldo} e crédito ${credito}'
 }
+function exe10(){
+    // rec custo
+    let custo = Number (document.getElementById(saldo).value)
+    let distribuidor =0
+    let imposto =0
+    if (custo <12000){
+        distribuidor = custo *5/100
+        imposto = 0
+    }
+    else if (custo >=12000 && custo <= 25000){
+        distribuidor = custo *15/100
+        imposto = custo *20/100
+    }
+    else {
+        document.getElementById("consumidor").innerHTML = "custo negativo"
+        return
+    }
+    document.getElementById("consumidor").innerHTML = 'custo da fábrica ${custo} <br/> distribuidor ${distribuidor} <br/> imposto <br/> valor consumidor ${consumidor}'
+
+}
