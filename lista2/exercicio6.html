@@ -9,7 +9,7 @@
     </head>
     <body>
         <div class="sidebar">
-            <h2> Lista 1 de JS </h2>
+            <h2> Lista 2 de JS </h2>
             <ul> <!-- lista não ordenada-->
                 <li> <a href="index.html"> Home </a> </li>
                 <li> <a href="exercicio1.html"> Exercício 1 </a> </li>
@@ -28,17 +28,19 @@
             <div class="card">
                 <h1> Exercício 6 </h1>
                 <form>
-                    <label> salarioFixo</label><br>
-
-                    <input type="number" id="salarioFixo"/><br>
-
-                    <label> valorVendas</label><br>
-
-                    <input type="number" id="valorVendas"/><br>
-
-                    <button onclick="calcularSalario()"type = "button">Calcular</button>
-
-                    <label id="salarioFinal">o resultado é: </label>
+                    <label> Número 1 </label>
+                    <input type="number" id="nro1"/>
+                    <label> Número 2 </label>
+                    <input type="number" id="nro2"/>
+                    <label> Escolha a sua opção </label>
+                    <select id="selecao">
+                        <option value="1"> 1º num elevado ao 2º</option>
+                        <option value="2"> raiz quadrada de cada um dos dois números </option>
+                        <option value="3"> raiz cubica de  cada numero </option>
+                    </select>
+                    <button onclick="exe6()" type="button"> Calcular </button>
+                    <label id="result"> O resultado é: </label>
+                </form>
                 </form>
             </div>
         </div>
