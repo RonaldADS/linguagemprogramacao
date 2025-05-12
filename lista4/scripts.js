@@ -198,5 +198,8 @@ function exe9(){
         nomes.push(prompt(`Informe nome do produto ${i+1}`))
         codigos.push(Number(prompt(`Informe o codigo do produto ${i+1}`)))
         precos.push(Number(prompt(`Informe os preços do produto  ${i+1}`)))
+        if (precos /precos !=0){
+            
+        }
     }
 }
