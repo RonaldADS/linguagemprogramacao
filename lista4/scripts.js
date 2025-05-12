@@ -195,11 +195,23 @@ function exe8(){
 function exe9(){
     let codigos = [], nomes = [], precos=[];
     for(let i=0;i<7;i++){
-        nomes.push(prompt(`Informe nome do produto ${i+1}`))
-        codigos.push(Number(prompt(`Informe o codigo do produto ${i+1}`)))
-        precos.push(Number(prompt(`Informe os preços do produto  ${i+1}`)))
-        if (precos /precos !=0){
-            
+        nomes.push(prompt(`Informe nome do produto ${i+1}`))//coleta e armazena os nomes
+        codigos.push(Number(prompt(`Informe o codigo do produto ${i+1}`))) // armazena os codigos 
+        precos.push(Number(prompt(`Informe os preços do produto  ${i+1}`)))//armazena os preços 
+    for(let i=0;i<10;i++){
+        if (codigos [i] %2==0 &&  precos[i] >100){
+            novo = precos[i] + precos [i] *20/100
         }
+        else if (codigos [i] %2==0){
+            novo = precos[i] + precos [i] *15/100
+        }
+        else if (precos[i] >100){
+            novo = precos[i] + precos [i] *10/100
+        }
+        else {
+            novo = precos [i]
+        }
+    }
+    alert (`${nomes [i]} - ${codigos [i]} - ${precos [i]} - ${novo}`)
     }
 }
