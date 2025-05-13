@@ -215,3 +215,38 @@ function exe9(){
     alert (`${nomes [i]} - ${codigos [i]} - ${precos [i]} - ${novo}`)
     }
 }
+function exe10(){
+    let vetor1 =[], vetor2 =[]
+    let vetorR1 =[],vetorR2 =[]
+// entrada de dados 
+    for (let i=0;i<10;i++){
+        vetor1.push(Number(prompt(`informe o ${i+1} elemento do vetor 1`)))
+    }
+    for (let i=0;i<5;i++){
+        vetor2.push(Number(prompt(`informe o ${i+1} elemento do vetor 2`)))
+    }
+    let somaVet2 =0
+    for (let i=0;i<5;i++){
+        somaVet2 += vetor2[i]
+    }
+    for (let i=0;i<10;i++){
+        if(vetor1[i]%2==0){
+            vetorR1.push(vetor1[i] + somaVet2)
+        }
+    }
+    alert(`vetor resultante 1 ${vetorR1}`)
+    //calcular o vetor resultante 2
+    for (let i=0;i<10;i++){// para cadda elemento do vetor 1
+        if (vetor1[i] %2 == 1 ){ // verifica se o elemento é impar
+        let qtdDeDivispores = 0
+        for (let j=0;j<5;j++){ //para cada elemento do vetor 2
+            if (vetor1[i] % vetor2[j]==0){//encontrou o divisor
+                qtdDeDivispores ++ //conta +1 nos divisores
+            }
+        }
+        vetor2.push(qtdDeDivispores)//adiciona contador no vetorR2
+        }
+    }
+        alert(`vetor resultante 2 ${vetorR2}`)
+
+}
